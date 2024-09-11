@@ -1,0 +1,80 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./duduprojeto/Captura de tela 2024-03-03 134414.png" alt="Logo da Barbearia" class="logo">
+            <h1>Havi barber</h1>
+            <p>Bairro: Cidade nova.  Rua: são domingos N°: 807</p>
+        </header>
+
+        <div id="serviceSelection">
+            <h2>Selecione um Serviço</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    
+                    <h3>CORTE</h3>
+                    <p>R$ 20,00</p>
+                    <button class="select-service" data-service="Corte Clássico">Agendar</button>
+                </div>
+                <div class="service-item">
+                    
+                    <h3>NAVALHADO</h3>
+                    <p>R$ 25,00</p>
+                    <button class="select-service" data-service="Corte Moderno">Agendar</button>
+                </div>
+                <div class="service-item">
+                    <h3>Corte+Barba</h3>
+                    <p>R$ 45,00</p>
+                    <button class="select-service" data-service="Corte com Barba">Agendar</button>
+                </div>
+                <div class="service-item">
+                    <h3>PIGMENTAÇAO</h3>
+                    <p>R$ 25,00</p>
+                    <button class="select-service" data-service="Corte com Barba">Agendar</button>
+                </div>
+                <div class="service-item">
+                    <h3>SOMBRANCELHA</h3>
+                    <p>R$ 5,00</p>
+                    <button class="select-service" data-service="Corte com Barba">Agendar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="bookingScreen" class="hidden">
+            <button id="backButton">Voltar</button>
+            <h2>Agende Seu Horário</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Hora:</label>
+                    <select id="time" required>
+                        <option value="">Selecione uma hora</option>
+                    </select>
+                </div>
+                <button type="submit">Confirmar Agendamento</button>
+            </form>
+            <p id="confirmationMessage" class="confirmation-message"></p>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

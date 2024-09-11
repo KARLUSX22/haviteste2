@@ -1,0 +1,247 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px; /* Tamanho da logo ajustado */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Aumenta um pouco a logo ao passar o mouse */
+}
+
+h1 {
+    font-size: 48px; /* Tamanho maior do texto */
+    margin: 10px 0;
+    color: #000;
+    font-family: 'Impact', sans-serif;
+    text-shadow: 4px 4px 0 #fff, 8px 8px 0 #ccc;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f9f9f9; /* Fundo claro para itens de serviço */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.service-item p {
+    font-size: 20px;
+    color: #333;
+}
+
+.select-service {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #000; /* Botão preto */
+    color: #fff; /* Texto branco no botão */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.select-service:hover {
+    background-color: #444; /* Cor mais clara quando o botão é hover */
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000; /* Botão preto */
+    color: #fff; /* Texto branco no botão */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333; /* Cor mais clara quando o botão é hover */
+}
+
+.confirmation-message, .error-message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.confirmation-message {
+    color: #27ae60; /* Verde para confirmação */
+}
+
+.error-message {
+    color: #e74c3c; /* Vermelho para erros */
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #000; /* Botão preto para voltar */
+    color: #fff; /* Texto branco no botão */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #333; /* Cor mais clara quando o botão é hover */
+}
+
+/* Seção de Horário de Funcionamento */
+.hours-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: #000; /* Fundo preto para destacar */
+    border: 2px solid #ffcc00; /* Borda amarela para chamar atenção */
+    border-radius: 8px;
+    text-align: center;
+    color: #fff; /* Texto branco */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+
+.hours-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Cor amarela para o título */
+    font-family: 'Arial Black', sans-serif; /* Fonte chamativa */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra no texto */
+}
+
+.hours-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-info li {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff; /* Texto branco */
+    background: rgba(255, 255, 255, 0.2); /* Fundo branco semitransparente */
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.hours-info li:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.1); /* Fundo branco semitransparente alternado */
+}
+
+.hours-info li:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Cor mais clara ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .hours-info h2 {
+        font-size: 20px;
+    }
+
+    .hours-info li {
+        font-size: 16px;
+    }
+}
